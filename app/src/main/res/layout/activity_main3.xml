@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo_text"
+        android:layout_width="376dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/welcomeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bmi_logo_text" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="385dp"
+        android:layout_height="96dp"
+        android:ems="10"
+        android:hint="Height (In cms)"
+        android:inputType="number|textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_text"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="385dp"
+        android:layout_height="96dp"
+        android:ems="10"
+        android:hint="Weight (In kgs)"
+        android:inputType="number|textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_text" />
+
+    <Button
+        android:id="@+id/arrowBtn1"
+        android:layout_width="137dp"
+        android:layout_height="55dp"
+        android:onClick="setFinalResult"
+        android:text="Next ➡"
+        app:backgroundTint="#FA565D"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/height"
+        app:layout_constraintVertical_bias="0.592" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
